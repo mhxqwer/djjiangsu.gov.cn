@@ -1,0 +1,102 @@
+/* 增对hanweb.css====问题的覆盖样式！ */
+body {
+
+  text-align:center;
+}
+a {transition: all 0.2s ease-out 0s; color:#333}
+a:hover{transition: all 0.2s ease-out 0s; color:#F00}
+
+/*******文章正文样式开始****/
+.bt-article-y #zoom{ font-size: 20px;text-align:left;padding-bottom: 40px;min-height:300px;}
+#zoom img {max-width: 100%;}
+.bt-article-y .down, .bt-article-s .down{height: auto;}
+.bt-position,.bt-article-y{width: 1200px;}
+.bt-article-y .bt-article-02{width: 1200px;}
+.on{
+	    color: #015293;
+	    font-weight: bold;
+}
+@media only screen and (max-width:768px){
+	.down_search,.over_content_box,.bt-box,.footer_box_top,.fenxiang,.next,.top,.nav li{display:none;}	
+	body{min-width:100%;}
+	.bt-article-02{max-width:100%;}
+	.footer_bottom{max-width:100%;padding:20px 0!important;}
+	.footer_bottom div,.footer_bottom p{float:inherit;margin:0 auto;}
+	.footer_box_bottom{height:auto!important;}
+	.top_box{height:40px;}
+	.nav{height:50px;max-width:100%;}
+	.newnewerm,.newqd01,.dzjg,.jc,#qr_container,.footer_box_bottom,.footer_box{display:none!important;}
+.bt-article-y{border:0!important;}
+}
+
+.newnewerm{margin:0 auto 20px;width:150px;height:150px;}
+
+.bt-article-s .bt-article-02{ width:1000px; padding:25px 100px 30px 100px; }
+.bt-article-y .bt-article-02{ width:1200px; padding:25px 100px 30px 100px;}
+
+
+/***文章页-自适应wap手机端效果代码判断css的关键，以下css是使用于手机端的样式代码**/
+@media only screen and (max-width:768px) { 
+
+/**手机端所有需要隐藏的容器class全部加在下面**/
+.bt-top-nav,
+.bt-head-cen,
+.bt-nav-y,
+.bt-nav-s
+.bt-box,
+.bt-position,
+.xg-box,
+.bt-footer{
+	display:none;
+}
+
+/**手机端所有需要显示的容器宽度都要变成100%**/
+.bt-head,
+.bt-article-s,
+.bt-article-y{
+	width:100% !important
+
+}
+
+.bt-article-s .bt-article-02,
+.bt-article-y .bt-article-02{ width:100%; padding:15px 10px;}
+
+/**手机端-页头部分全部隐藏，然后替换成手机端专用logo**/
+.bt-head{ 
+	width:100%;
+	height:80px;
+	min-height:0;
+	border-bottom:#333 solid 2px;
+	background:url(../images/logo-wap.png) no-repeat left top;
+
+}
+	
+/**手机端-文章文调整**/
+.bt-article-s,
+.bt-article-y{
+	min-height:400px;
+	margin:0 auto;
+	padding:15px 10px; 	
+}
+.bt-article-s .bt-article-02,
+.bt-article-y .bt-article-02{ 
+	padding:0;
+
+}
+	
+.bt-article-s .sp_time font,
+.bt-article-y .sp_time font{ 
+	padding:0 20px; 
+	line-height:30px; 
+	display:block; 
+	width:100%
+}
+
+}
+.fenxiang .fx-cen:first-child{background:url(../images/fenxiangtit.png) no-repeat left center;padding-left:28px;height:40px;}
+.jiathis_style{margin-top:12px!important;}
+.print_close a{display:block;height:40px;line-height:40px;float:left;font-size:15px;}
+.print{background:url(../images/print.png) no-repeat left center;padding-left:30px;margin-right:20px;}
+.close{background:url(../images/close.png) no-repeat left center;padding-left:30px;}
+.ie8sys{display:block;text-align:center;font-size:13px;color:#b5b5b5;line-height:28px;}
+#showImg01 a img{vertical-align: top;}
